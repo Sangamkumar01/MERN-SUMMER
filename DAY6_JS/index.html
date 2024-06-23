@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: rgb(167, 166, 209);
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .login_form {
+            background-color: cyan;
+            width: 500px;
+            height: auto;
+            margin: 50px auto;
+
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            border-radius: 7px;
+            box-shadow: 0 5px 25px rgba(3, 19, 51, 0.959);
+
+        }
+
+        .login_form h1 {
+            padding: 20px 20px 0 110px;
+            color: #fff;
+            
+        }
+
+        .login_form .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .login_form .input_field {
+            padding: 12px 5px;
+        }
+
+        .login_form .input_field input {
+            font-size: 15px;
+            display: block;
+            font-family: 'Rubik', sans-serif;
+            width: 100%;
+            padding: 10px 1px;
+            border: 0;
+            border-bottom: 1px solid #747474;
+            border-radius: 5px;
+            outline: none;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+
+        }
+
+        .login_form .input_field input::-webkit-input-placeholder {
+            text-transform: uppercase;
+        }
+
+        .login_form .input_field input::-moz-placeholder {
+            text-transform: uppercase;
+        }
+
+        .login_form .input_field input:-ms-input-placeholder {
+            text-transform: uppercase;
+        }
+
+        .login_form .input_field input::placeholder {
+            text-transform: uppercase;
+        }
+
+        .login_form .input_field input:focus {
+            border-color: rgb(31, 25, 25);
+        }
+
+        .login-form a.link {
+            text-decoration: none;
+            color: #5e5d77;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .login_form .action {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+        }
+
+        .login_form .action button {
+            width: 100%;
+            border: none;
+            padding: 15px;
+
+            font-family: 'Rubik', sans-serif;
+            cursor: pointer;
+            text-transform: uppercase;
+            background-color: rgb(234, 248, 237);
+            color: rgb(69, 71, 71);
+
+            border-radius: 5px;
+            letter-spacing: 0.2px;
+            outline: 0;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .login_form .action button:hover {
+            background: #969ca5;
+        }
+
+        .login_form .action button:nth-child(2) {
+            background: #313f59;
+            color: #fff;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 4px;
+        }
+
+        .login_form .action button:nth-child(2):hover {
+            background: #3c4d6d;
+        }
+
+        .link {
+            color: #fff;
+        }
+
+        .link:hover {
+            color: #969ca5;
+            ;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="login_form">
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <h2>Create an Account</h2>
+            <div class="content">
+                <div class="input_field">
+                    <input type="text" placeholder="Enter First Name" name="fname" autocomplete="fname" required>
+                    <span class="error" id="fnameError"></span>
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Enter Last Name" name="lname" autocomplete="lname" required>
+                    <span class="error" id="lnameError"></span>
+                </div>
+                <div class="input_field">
+                    <input type="email" placeholder="Enter Email Id" name="mail" autocomplete="mail" required>
+                    <span class="error" id="mailError"></span>
+                </div>
+                <div class="input_field">
+                    <input type="tel" placeholder="Enter Phone Number" name="phone" autocomplete="phone" required>
+                    <span class="error" id="phoneError"></span>
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Create Username" name="username" autocomplete="username" required>
+                    <span class="error" id="usernameError"></span>
+                </div>
+                <div class="input_field">
+                    <input type="password" placeholder="Password" name="psw" autocomplete="new_pass" required>
+                    <span class="error" id="pswError"></span>
+                </div>
+                <div class="input_field">
+                    <input type="password" placeholder="Confirm Password" name="cpsw" autocomplete="con_pass" required>
+                    <span class="error" id="cpswError"></span>
+                </div>
+                
+            </div>
+            <div class="action">
+                <button type="button" onclick="signup()">Signup</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="userCard" class="card" style="display: none;">
+
+        <h2>Welcome!</h2>
+        <p><strong>First Name:</strong> <span id="cardFname"></span></p>
+        <p><strong>Last Name:</strong> <span id="cardLname"></span></p>
+        <p><strong>Email:</strong> <span id="cardMail"></span></p>
+        <p><strong>Phone Number:</strong> <span id="cardPhone"></span></p>
+        <p><strong>Username:</strong> <span id="cardUsername"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>

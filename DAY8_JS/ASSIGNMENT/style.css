@@ -1,0 +1,19 @@
+main{
+    padding: 24ps;
+    background-color: cyan;
+    min-height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main>div{
+    width: 300px;
+    padding: 15px;
+    background-color: blueviolet;
+    margin: 12px auto;
+    border-radius: 10px;
+}
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+}

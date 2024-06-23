@@ -1,0 +1,70 @@
+/* h4{
+    color: green;
+}
+.new.heading2{
+    font-size: 35px;
+    
+}
+.heading2.new{
+    text-decoration: underline;
+}
+.root{
+    background-color: cyan;
+    padding: 12px;
+    margin: 12px;
+    border: 2px solid black ;
+    width: 250px ;
+}
+
+.root2{
+    box-sizing: border-box;
+    background-color: cyan;
+    padding: 14px;
+    margin: 12px;
+    border: 2px solid black ;
+    width: 250px ;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/* div{
+    background-color: cyan;
+    font-size: 2rem;
+}
+p{
+    background-color: lemonchiffon;
+    font-size: 4em;
+    width: 10em;
+} */
+
+/* div{
+    background-color: cyan;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+} */
+/* .btn{
+    display: block;
+    background-color: greenyellow;
+    width: fit-content;
+    margin: auto;
+    padding: 6px 10px ;
+    border-radius: 8px;
+    border: none;
+    
+
+}
+.big{
+    font-size: 20px;
+}
+.small{
+    font-size: 8px;
+} */
+
+ol h3{
+    color: blue;
+}

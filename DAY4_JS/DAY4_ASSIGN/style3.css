@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 400px 140px;
+}
+nav,footer{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+aside{
+    background-color: cyan;
+}
+main{
+    background-color: chocolate;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding: 48px;
+
+}
+section{
+    background-color: yellow;
+    height: 100%;
+}
+footer{
+    background-color: blue;
+
+}

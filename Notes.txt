@@ -1,0 +1,82 @@
+Label and input both are inline.
+border-box :- width = border+padding+content.
+content-box:- width = content
+
+A pseudo-class is used to define a special state of an element.
+
+JS Phases :- Memory allocation phase
+             Code Execution
+
+var is a functional Scope.
+let- cannot be redeclared.
+Variables declared with let have Block Scope
+Variables declared with let must be Declared before use
+Variables declared with let cannot be Redeclared in the same scope
+
+Variables defined with const cannot be Redeclared
+Variables defined with const cannot be Reassigned
+Variables defined with const have Block Scope
+
+for of - array
+for in - everyone
+
+selector - id, classname,types, attributes,
+
+e.preventDefault() -not submit the form
+
+console.dir(e.target); - It will show obj of form
+get element by tag name-return array
+
+if a fnc accept 
+
+// PROMISES
+setTimeout - Async
+promises use for parallel Execution.
+There are 6 static methods of promise class.
+promises is an object which represents eventual completion or failure of an Async operation
+and its resulting value.
+Promise is like a function.
+There are 3 states:- 1.Pending, 2.
+
+
+// console.log('Start');
+// const delay = 1000;
+// const cb = () =>{
+//     console.log('CB Called');
+// }
+// setTimeout(cb, 0);
+// console.log('End');
+
+
+// console.log('Start');
+// setTimeout(()=>{
+//     console.log('CB Called');
+
+//     setTimeout(()=>{
+//         console.log('Internal CB Called');
+//     }, 10000);
+// },10000);
+
+// console.log('End');
+
+
+console.log('Start');
+setTimeout(()=>{
+    console.log('A');
+},0)
+console.log('Mid');
+function abc(){
+    console.log('B');
+}
+function xyz(){
+    console.log('C');
+    setTimeout(()=>{
+        console.log('D');
+    },0);
+}
+setTimeout(abc,0)
+xyz();
+console.log('End');
+
+
+Queue - Callback, Promise

@@ -1,0 +1,39 @@
+[
+    {
+       "id":1,
+       "name":"Aman",
+       "MathScore":80,
+       "ScienceScore": 70
+    },
+    {
+       "id":2,
+       "name":"Tarun",
+       "MathScore": 90,
+       "ScienceScore": 95
+    },
+    {
+       "id":3,
+       "name":"Ravi",
+       "MathScore": 60,
+       "ScienceScore": 85
+    },
+    {
+      "id":41,
+      "name":"Anan",
+      "MathScore":80,
+      "ScienceScore": 70
+   },
+   {
+      "id":21,
+      "name":"Ami",
+      "MathScore":80,
+      "ScienceScore": 70
+   },
+   {
+      "id":12,
+      "name":"Arju",
+      "MathScore":80,
+      "ScienceScore": 70
+   }
+
+]
