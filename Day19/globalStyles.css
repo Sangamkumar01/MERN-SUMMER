@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.homepage-root-container{
+    background-color: yellow;
+}
+.homepage-search-icons{
+    background-color: #DFA65C;
+    width: 1.5rem;
+    border: none;
+ }
+
+.homepage-nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #131921;
+    color: #fff;
+}
+
+.homepage-nav>h4{
+    width: 76px;
+}
+.homepage-nav>p{
+    width: 80px;
+    font-size: 12px;
+}
+.homepage-search-container{
+    flex-grow: 1;
+    height: 30px;
+    background-color: red;
+    display: flex;
+
+    input{
+        flex-grow: 1;
+    }
+}
+
+.homepage-category-bar{
+    background-color: #222F3E;
+    padding: 10px 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    button{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background-color: transparent;
+        padding: 4px 8px;
+        color: white;
+        border: none;
+    }
+}
+
+.homepage-category-bar>.category-items{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: white;
+      padding: 0 12px;
+}
+
+.homepage-body>.carousal-image{
+    width: 100%;
+}
+
+.homepage-body>.products-cards-container{
+    top: -320px;
+    position: relative;
+    margin: 0 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.products-info-card{
+    background-color: #fff;
+    flex-basis: 340px;
+    flex-grow: 1;
+    padding: 12px 16px;
+
+    h3{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .products-item-cards-container{
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        .products-item-card{
+            width: calc(50% - 8px);
+
+            img{
+                width: 100%;
+                height: 106px;
+            }
+        }
+    }
+}
+
+
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #cdc9c9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.homepage-root-container{
+    background-color: cyan;
+}
+.homepage-nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #11161D;
+    color: #fff;
+}
+.homepage-nav>h4{
+    width: 76px;
+}
+.homepage-nav>p{
+    width: 80px;
+    font-size: 12px;
+}
+.homepage-search-container{
+    flex-grow: 1;
+    height: 30px;
+    background-color: red;
+    display: flex;
+
+    input{
+        flex-grow: 1;
+    }
+}
+.homepage-search-icons{
+   background-color: #DFA65C;
+   width: 1.5rem;
+   border: none;
+}
+.homepage-category-bar{
+    background-color: #1F2936;
+    padding: 10px 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    button{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
+.homepage-category-bar>.category-items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding:  0 12px;
+    cursor: pointer;
+
+    
+}
+.category-items>a{
+    font-size: 0.8rem;
+    color: white;
+}
+.homepage-body>.carosoul-img{
+    width: 100%;
+}
+.homepage-body>.products-cards-container{
+    background-color: aqua;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.products-info-card{
+   background-color: white;
+   flex-basis: 340px;
+   flex-grow: 1;
+   padding: 16px;
+
+   h3{
+    font-size: 18px;
+    margin-bottom: 6px;
+   }
+
+   .products-item-card-conatiner{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+   
+    .products-item-card{
+       width: calc(50%-8px);
+
+       img{
+        width: 100%;
+        height: 106px;
+       }
+    }
+
+   }
+   
+}  */

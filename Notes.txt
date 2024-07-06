@@ -80,3 +80,60 @@ console.log('End');
 
 
 Queue - Callback, Promise
+
+key of obj -> objects.keys(req)
+Query = After question mark (?)
+
+Mongodb is a non relational database.
+
+
+DAY15
+main.JS
+controllers - productControllers.JS
+Routes - productRoutes.JS
+config - db.JS
+.env
+node_modules
+package.json
+
+patch - update
+put - 
+
+
+const sum = function(a,b){
+    return a+b;
+}
+const addResult = sum(2,4);
+clg(addResult);
+
+
+const mul = (a,b)=>{
+    return a*b;
+}
+const mulResult = mul(2,4);
+clg(mulResult);
+
+
+const mul2 = (a,b)=>a*b;
+const mulResult2 = mul(2,4);
+clg(mulResult);
+
+
+typeof - To prevent XXS
+JSX -> Javascript Syntax eXetension
+Babel is a javascript compiler
+Jsx element must have a parent
+const divHello = <div>Hello</div>;  //React element
+package-lock.json ->To download  Transitive dependencies
+element name - pascal case
+props -> passing data from parent to child.
+
+state -> state is a built-in React object that is used to 
+         contain data or information about the component.
+Re-render -> Call the function
+container -> object
+
+NO DEPENDENCY                         useEffect
+  []                =--------      call the callback everytime          
+  [a]               ---------     calls the callback only on "a" change and initial render
+ [a, b]             ---------     call the callback only on "a"
