@@ -5,12 +5,13 @@
 }
 
 .homepage-root-container{
-    background-color: yellow;
+    background-color: Cyan;
 }
 .homepage-search-icons{
     background-color: #DFA65C;
     width: 1.5rem;
     border: none;
+    cursor: pointer;
  }
 
 .homepage-nav{
@@ -20,6 +21,7 @@
     gap: 12px;
     background-color: #131921;
     color: #fff;
+    cursor: pointer;
 }
 
 .homepage-nav>h4{
@@ -46,6 +48,7 @@
     height: 40px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     button{
         display: flex;
@@ -56,6 +59,7 @@
         padding: 4px 8px;
         color: white;
         border: none;
+        cursor: pointer;
     }
 }
 

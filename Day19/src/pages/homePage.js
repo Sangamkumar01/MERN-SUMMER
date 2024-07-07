@@ -22,7 +22,7 @@ const HomePage = (props) => {
 
         <div className="homepage-body">
           <img
-            src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg"
+            src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg"
             className="carousal-image"
           />
           <div className="products-cards-container">
@@ -34,7 +34,7 @@ const HomePage = (props) => {
       </div>
 
       {products.map((product) => {
-        <div className="product" style={{backgroundColor:'white'}}>
+        <div className="product" style={{ backgroundColor: 'white' }}>
           <img src={product.thumbnail} />
           <h5>{product.title}</h5>
         </div>;
