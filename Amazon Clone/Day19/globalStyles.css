@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+    height: 100vh;
+}
 
 .homepage-root-container{
     background-color: Cyan;
@@ -150,6 +154,14 @@
 .product-card p {
     margin: 10px 0;
 }
+
+.product-cards-main-container{
+
+    width: 100vw;
+    height: 100vh;
+ 
+}
+
 
 
 
